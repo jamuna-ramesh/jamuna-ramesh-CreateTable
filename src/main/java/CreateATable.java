@@ -1,9 +1,9 @@
 
 import Util.ConnectionUtil;
-import Util.FileUtil;
+//import Util.FileUtil;
 
 import java.sql.Connection;
-import java.sql.PreparedStatement;
+//import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.sql.Statement;
 
@@ -62,7 +62,8 @@ public class CreateATable {
      */
     public void problem1(){
 //        write your SQL logic in a single line in the problem1.sql file.
-        String sql = FileUtil.parseSQLFile("problem1.sql");
+       //String sql = FileUtil.parseSQLFile("problem1.sql");
+        String sql = "CREATE TABLE Song (title VARCHAR(100),artist VARCHAR(100))";
 
         try {
             Connection connection = ConnectionUtil.getConnection();
